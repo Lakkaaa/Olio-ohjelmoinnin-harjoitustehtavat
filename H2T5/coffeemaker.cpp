@@ -57,8 +57,8 @@ void CoffeeMaker::brewCoffee()
 
 void CoffeeMaker::showStatus()
 {
-    cout << "Water in the coffeemaker: " << waterAmount << endl;
-    cout << "Bean amount in the coffeemaker: " << beanAmount << endl;
+    cout << "Water in the coffeemaker: " << waterAmount << " dl" << endl;
+    cout << "Bean amount in the coffeemaker: " << beanAmount << " dl"<< endl;
     if (state == false) {
         cout << "Coffeemaker is OFF" << endl;
     } else {
@@ -68,5 +68,5 @@ void CoffeeMaker::showStatus()
 
 void CoffeeMaker::showBrews()
 {
-    cout << "The coffeemaker has brewed " << brews << " cups of coffee." << endl;
+    cout << "The coffeemaker has brewed " << brews << " cup(s) of coffee." << endl;
 }
