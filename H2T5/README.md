@@ -19,3 +19,27 @@ Automaatilla voidaan suorittaa seuraavia toimintoja:
 - Palauttaa tieto siitä, kuinka monta kahviannosta automaatilla on valmistettu.
 
 Kahvin valmistaminen kuluttaa vettä ja kahvipapuja. Jos automaatissa ei ole riittävästi raaka-aineita tai automaatti ei ole päällä, kahvia ei voida valmistaa.
+
+## Luokkakaavio Coffeemakeristä
+
+```mermaid
+classDiagram
+class  CoffeeMaker {
+    - float waterTankVolume
+    - float waterAmount
+    - float beanTankCapacity
+    - float beanAmount
+    - int brews
+    - bool state
+
+
+    + CoffeeMaker(float wTankVolume, floatbTankCapacity)
+    + start() void
+    + stop() void
+    + addWater(float wAmount) void
+    + addBeans(float bAmount) void
+    + brewCoffee() void
+    + showStatus() void
+    + showBrews() void
+}
+```
