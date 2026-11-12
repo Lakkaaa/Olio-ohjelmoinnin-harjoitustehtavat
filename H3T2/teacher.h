@@ -5,8 +5,12 @@
 
 class Teacher : public Person
 {
+private:
+    int departmentID;
 public:
-    Teacher();
+    Teacher(string, int);
+    ~Teacher();
+    virtual void sayStatus();
 };
 
 #endif // TEACHER_H

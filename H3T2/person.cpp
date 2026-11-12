@@ -7,9 +7,16 @@ string Person::getName() const
 
 void Person::sayStatus()
 {
-    cout << "Olen person nimeni on:" << name << endl;
+    cout << "Olen person nimeni on: " << name << endl;
 }
 
-Person::Person(string n):name(n) {}
+Person::Person(string n):name(n) {
+    cout << "   Luotiin Person olio" << endl;
+}
+
+Person::~Person()
+{
+    cout << "   Person olio tuhottiin" << endl;
+}
 
 

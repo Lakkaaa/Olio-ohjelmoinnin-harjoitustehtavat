@@ -9,6 +9,7 @@ private:
     string name;
 public:
     Person(string);
+    ~Person();
     string getName() const;
     virtual void sayStatus();
 };
